@@ -19,7 +19,7 @@
 // THE SOFTWARE.
 
 
-/** 
+/**
  * @fileoverview Test cases that ensure Dygraphs works at all.
  *
  * @author konigsberg@google.com (Robert Konigsberg)
@@ -95,7 +95,7 @@ SanityTestCase.prototype.testToDomYCoord = function() {
 
   assertEquals(50, g.toDomYCoord(0));
   assertEquals(0, g.toDomYCoord(50));
-  
+
   for (var x = 0; x <= 50; x++) {
     assertEqualsDelta(50 - x, g.toDomYCoord(x), 0.00001);
   }

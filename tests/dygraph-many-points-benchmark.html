@@ -15,7 +15,7 @@
   </head>
   <body>
     <p>Plot which can be easily generated with different numbers of points for
-       benchmarking/profiling and improving performance of dygraphs.</p>    
+       benchmarking/profiling and improving performance of dygraphs.</p>
     <p>Data to plot:
       <input type="radio" name="plot_group1" value="sine" onclick="clickedRadioButton(this);" checked> sinusoid function
       <input type="radio" name="plot_group1" value="rand" onclick="clickedRadioButton(this);"> random points <br></p>
@@ -95,7 +95,7 @@
           for (var i = 0; i < millisecondss.length; i++) {
             avg+=millisecondss[i];
           }
-          avg/=millisecondss.length; 
+          avg/=millisecondss.length;
           document.getElementById('message').innerHTML =
               "Durations: " + millisecondss + " Average: " + avg;
         }
@@ -114,11 +114,11 @@
               "completed in " + (end2 - start2) + " milliseconds.";
         }
       };
-      
+
       clickedRadioButton = function(radiobutton) {
         dataType = radiobutton.value;
       };
-        
+
 
       document.getElementById('num_points_input').value = '100';
       document.getElementById('num_series_input').value = '1';

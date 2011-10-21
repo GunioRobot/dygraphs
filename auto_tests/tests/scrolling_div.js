@@ -1,4 +1,4 @@
-/** 
+/**
  * @fileoverview Test cases for a graph contained in a scrolling div
  *
  * @author konigsberg@google.com (Robert Konigsbrg)
@@ -16,7 +16,7 @@ var LOREM_IPSUM =
     "non proident, sunt in culpa qui officia deserunt mollit anim id est\n" +
     "laborum.</p>";
 
-  document.body.innerHTML = 
+  document.body.innerHTML =
       "<div id='scroller' style='overflow: scroll; height: 450px; width: 800px;'>" +
       "<div id='graph'></div>" +
       "<div style='height:100px; background-color:green;'>" + LOREM_IPSUM + " </div>" +
@@ -47,7 +47,7 @@ var LOREM_IPSUM =
             }
           }
       );
-  
+
 };
 
 ScrollingDivTestCase.prototype.tearDown = function() {

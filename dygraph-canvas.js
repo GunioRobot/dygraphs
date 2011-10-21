@@ -237,7 +237,7 @@ DygraphCanvasRenderer.prototype.render = function() {
   // Do the ordinary rendering, as before
   this._renderLineChart();
   this._renderAxis();
-  this._renderChartLabels(); 
+  this._renderChartLabels();
   this._renderAnnotations();
 };
 
@@ -599,7 +599,7 @@ DygraphCanvasRenderer.prototype._renderLineChart = function() {
   var isNullOrNaN = function(x) {
     return (x === null || isNaN(x));
   };
-  
+
   // TODO(danvk): use this.attr_ for many of these.
   var context = this.elementContext;
   var fillAlpha = this.attr_('fillAlpha');

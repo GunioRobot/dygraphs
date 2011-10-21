@@ -1,7 +1,7 @@
 // Copyright 2011 Robert Konigsberg (konigsberg@google.com)
 // MIT-licensed (http://opensource.org/licenses/MIT)
 
-/** 
+/**
  * @fileoverview The default interaction model for Dygraphs. This is kept out
  * of dygraph.js for better navigability.
  * @author Robert Konigsberg (konigsberg@google.com)
@@ -126,7 +126,7 @@ Dygraph.Interaction.movePan = function(event, g, context) {
 
       var pixelsDragged = context.dragEndY - context.dragStartY;
       var unitsDragged = pixelsDragged * axis.unitsPerPixel;
- 
+
       var boundedValue = context.boundedValues ? context.boundedValues[i] : null;
 
       // In log scale, maxValue and minValue are the logs of those values.

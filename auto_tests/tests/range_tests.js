@@ -19,7 +19,7 @@
 // THE SOFTWARE.
 
 
-/** 
+/**
  * @fileoverview Test valueRange and dateWindow changes.
  *
  * @author konigsberg@google.com (Robert Konigsberg)

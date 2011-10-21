@@ -98,7 +98,7 @@ DygraphLayout.prototype._evaluateLimits = function() {
       if (series.length > 1) {
         var x1 = series[0][0];
         if (!this.minxval || x1 < this.minxval) this.minxval = x1;
-  
+
         var x2 = series[series.length - 1][0];
         if (!this.maxxval || x2 > this.maxxval) this.maxxval = x2;
       }
@@ -251,7 +251,7 @@ DygraphLayout.prototype._evaluateAnnotations = function() {
   if (!this.annotations || !this.annotations.length) {
     return;
   }
-  
+
   // TODO(antrob): loop through annotations not points.
   for (var i = 0; i < this.points.length; i++) {
     var p = this.points[i];
@@ -277,25 +277,25 @@ DygraphLayout.prototype.removeAllDatasets = function() {
  */
 DygraphLayout.prototype.unstackPointAtIndex = function(idx) {
   var point = this.points[idx];
-  
+
   // Clone the point since we modify it
-  var unstackedPoint = {};  
+  var unstackedPoint = {};
   for (var i in point) {
     unstackedPoint[i] = point[i];
   }
-  
+
   if (!this.attr_("stackedGraph")) {
     return unstackedPoint;
   }
-  
-  // The unstacked yval is equal to the current yval minus the yval of the 
+
+  // The unstacked yval is equal to the current yval minus the yval of the
   // next point at the same xval.
   for (var i = idx+1; i < this.points.length; i++) {
     if (this.points[i].xval == point.xval) {
-      unstackedPoint.yval -= this.points[i].yval; 
+      unstackedPoint.yval -= this.points[i].yval;
       break;
     }
   }
-  
+
   return unstackedPoint;
-}  
+}

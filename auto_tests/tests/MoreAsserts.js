@@ -19,7 +19,7 @@
 // THE SOFTWARE.
 
 
-/** 
+/**
  * @fileoverview Additional assertions.
  *
  * @author konigsberg@google.com (Robert Konigsberg)

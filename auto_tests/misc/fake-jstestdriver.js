@@ -18,7 +18,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-/** 
+/**
  * @fileoverview Mocked-out jstestdriver api that lets me test locally.
  *
  * @author konigsberg@google.com (Robert Konigsberg)

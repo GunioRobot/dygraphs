@@ -19,7 +19,7 @@
 // THE SOFTWARE.
 
 
-/** 
+/**
  * @fileoverview Utility functions for Dygraphs.
  *
  * @author konigsberg@google.com (Robert Konigsberg)
@@ -73,7 +73,7 @@ DygraphOps.createEvent = function(command, custom) {
     e.type,
     e.canBubble,
     e.cancelable,
-    e.view, 
+    e.view,
     e.detail,
     e.screenX,
     e.screenY,

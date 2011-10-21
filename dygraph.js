@@ -1093,7 +1093,7 @@ Dygraph.prototype.createDragInterface_ = function() {
  * up any previous zoom rectangles that were drawn. This could be optimized to
  * avoid extra redrawing, but it's tricky to avoid interactions with the status
  * dots.
- * 
+ *
  * @param {Number} direction the direction of the zoom rectangle. Acceptable
  * values are Dygraph.HORIZONTAL and Dygraph.VERTICAL.
  * @param {Number} startX The X position where the drag started, in canvas
@@ -1479,11 +1479,11 @@ Dygraph.prototype.setSelection = function(row) {
     for (var i in this.layout_.datasets) {
       if (row < this.layout_.datasets[i].length) {
         var point = this.layout_.points[pos+row];
-        
+
         if (this.attr_("stackedGraph")) {
           point = this.layout_.unstackPointAtIndex(pos+row);
         }
-        
+
         this.selPoints_.push(point);
       }
       pos += this.layout_.datasets[i].length;

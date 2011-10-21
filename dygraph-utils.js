@@ -618,7 +618,7 @@ Dygraph.isPixelChangingOptionList = function(labels, attrs) {
     'yAxisLabelFormatter': true,
     'yValueFormatter': true,
     'zoomCallback': true
-  };    
+  };
 
   // Assume that we do not require new points.
   // This will change to true if we actually do need new points.
@@ -656,7 +656,7 @@ Dygraph.isPixelChangingOptionList = function(labels, attrs) {
       // If this was not a series specific option list, check if its a pixel changing property.
       } else if (!pixelSafeOptions[property]) {
         requiresNewPoints = true;
-      }   
+      }
     }
   }
 

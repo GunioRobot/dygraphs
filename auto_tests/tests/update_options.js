@@ -5,7 +5,7 @@
  * @author antrob@google.com (Anthony Robledo)
  */
 var UpdateOptionsTestCase = TestCase("update-options");
-  
+
 UpdateOptionsTestCase.prototype.opts = {
   width: 480,
   height: 320,
@@ -71,7 +71,7 @@ UpdateOptionsTestCase.prototype.testStrokeSingleSeries = function() {
   this.unWrap(oldDrawGraph);
   assertFalse(graph._testDrawCalled);
 };
- 
+
 UpdateOptionsTestCase.prototype.testSingleSeriesRequiresNewPoints = function() {
   var graphDiv = document.getElementById("graph");
   var graph = new Dygraph(graphDiv, this.data, this.opts);

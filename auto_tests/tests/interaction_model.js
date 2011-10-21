@@ -1,4 +1,4 @@
-/** 
+/**
  * @fileoverview Test cases for the interaction model.
  *
  * @author konigsberg@google.com (Robert Konigsbrg)

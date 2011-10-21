@@ -590,7 +590,7 @@ Dygraph.OPTIONS_REFERENCE =  // <JSON>
 (function() {
   var warn = function(msg) { if (console) console.warn(msg); };
   var flds = ['type', 'default', 'description'];
-  var valid_cats = [ 
+  var valid_cats = [
    'Annotations',
    'Axis display',
    'Chart labels',
